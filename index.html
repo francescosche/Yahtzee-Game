@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body onload="pagina_carica();">
+        <table id="schema">
+            <tr>
+                <td>1</td>
+                <td id="point_1"></td>
+                <td>3x</td>
+                <td id="point_3x"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="point_2"></td>
+                <td>4x</td>
+                <td id="point_4x"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="point_3"></td>
+                <td>F</td>
+                <td id="point_f"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="point_4"></td>
+                <td>S</td>
+                <td id="point_s"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td id="point_5"></td>
+                <td>B</td>
+                <td id="point_b"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td id="point_6"></td>
+                <td>Y</td>
+                <td id="point_y"></td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td id="point_63"></td>
+                <td>?</td>
+                <td id="point_?"></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="dadi"></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="tira" class="button" onclick="tira_dadi();">Tira i dadi <span id="numero_tiri">3</span></td>
+            </tr>
+        </table>
+    </body>
+</html>

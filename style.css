@@ -1,0 +1,129 @@
+table {
+    background: #c0392b;
+    border-spacing: 6px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}
+td {
+    min-width: 50px;
+    min-height: 50px;
+    display: inline-block;
+    background: rgba(231, 76, 60, 1);
+    border-radius: 5px;
+    margin: 0px 3px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+table td:nth-child(odd) {
+    background: rgba(231, 76, 60, 0.2);
+}
+
+td:nth-child(even) {
+    cursor: pointer;
+}
+
+td[done] {
+    border: 3px solid #fff;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 44px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.3) inset;
+}
+td[done='no'] {
+    border: 3px dotted #fff;
+}
+
+#dadi, .button, #gioca {
+    width: 224px;
+}
+
+#dadi {
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 0px;
+    line-height: 0px;
+}
+
+.dado {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.dado:nth-child(n+2) {
+    margin-left: 6px;
+}
+
+.dado[locked] {
+    width: 34px !important;
+    height: 34px !important;
+    border: 3px solid #fff;
+    line-height: 34px;
+}
+
+#point_63 {
+    cursor: default;
+}
+
+#numero_tiri {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #fff;
+    color: #e74c3c;
+}
+
+.button {
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-size: 25px;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.4);
+}
+
+.button:hover {
+    top: 0px;
+    box-shadow: 0px 3px 0px rgba(0,0,0,0.4);
+}
+
+.button:active {
+    top: 3px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+
+#tira {
+    background: #e74c3c;
+    color: #fff;
+}
+
+#gioca {
+    background-color: #fff;
+    color: #c0392b;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#gioca[disabled] {
+    background-color: rgba(255,255,255,0.2);
+    cursor: default;
+}
